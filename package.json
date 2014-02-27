@@ -1,0 +1,8 @@
+{
+  "name": "ProjectEuler",
+  "description": "",
+  "license": "ISC",
+  "devDependencies": {
+    "underscore": "~1.6.0"
+  }
+}
