@@ -1,16 +1,9 @@
-var _ = require('underscore');
+var sum = 0;
 
-var sum = 0,
-    multiples = [];
-
-[3, 5].forEach(function (number) {
-    for(var multiple = number; multiple < 1000; multiple += number) {
-        multiples.push(multiple);
+for(var i = 1; i < 1000; i++) {
+    if(i % 3 == 0 || i % 5 == 0) {
+        sum += i;
     }
-});
-
-_.uniq(multiples).forEach(function (multiple) {
-   sum +=  multiple;
-});
+}
 
 console.log(sum);
